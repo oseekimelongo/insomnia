@@ -13,7 +13,7 @@ router.get('/', tweet_controller.tweetCreateGet);
 router.put('/:id', tweet_controller.tweetPut)
 // // router.get('/tweet', tweet_controller.tweetList);
 
-router.delete('/:id', tweet_controller.tweetcreateDelete);
+router.delete('/:id', tweet_controller.tweetDelete);
 // // router.post('/tweet/:id/Update', tweet_controller.tweetUpdatePost);
 
 module.exports = router
