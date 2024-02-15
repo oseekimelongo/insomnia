@@ -11,6 +11,8 @@ exports.tweetCreateGet = (req, res) => {
 exports.tweetCreatePost = (req, res) => {
     const unetweet = (req.body)
     unetweet.id = tweet.length +1
+    unetweet.photo = req.file?.path;
+
     tweet.push(unetweet)
     res.send(unetweet)
 };
