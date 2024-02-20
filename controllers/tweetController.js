@@ -38,7 +38,7 @@ exports.tweetDelete = (req, res) => {
     const twett = req.body
     const tweettput = tweet.find((tweettput) => tweettput.id == unetweetId)
         if(!tweettput){
-            res.status(404).send("nottrouve")
+            res.status(404).send("not trouve")
             return;
         } tweet.pop(twett)
         res.send("le tweet a été supprimé")
