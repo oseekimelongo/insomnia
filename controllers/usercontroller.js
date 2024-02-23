@@ -10,7 +10,8 @@ exports.loginUserPost = (req, res) => {
 exports.signupUserPost = (req, res) => {
     const login = {
         email: req.body.email,
-        password: req.body.password
+        password: req.body.password,
+        name:req.body.name
     }
     res.send(login)
 };

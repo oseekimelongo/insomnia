@@ -17,10 +17,12 @@ const app = express();
 // const indexRouter = require('./routes/index');
 const daltonRouter = require('./routes/dalton.js');
 const user_connect = require('./routes/routeUser.js');
+const userjwt = require('./routes/routejwt.js');
 app.use(express.json());
 // app.use('/', indexRouter);
 app.use('/dalton', daltonRouter);
 app.use('/auth', user_connect);
+// app.use('/routejwt', userjwt);
 
  
 
